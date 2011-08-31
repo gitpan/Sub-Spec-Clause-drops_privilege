@@ -1,8 +1,8 @@
 NAME
-    Sub::Spec::Clause::drops_privilege - Add clause 'drops_privilege'
+    Sub::Spec::Clause::drops_privilege - Add spec clause 'drops_privilege'
 
 VERSION
-    version 0.01
+    version 0.02
 
 SYNOPSIS
      # in your sub spec

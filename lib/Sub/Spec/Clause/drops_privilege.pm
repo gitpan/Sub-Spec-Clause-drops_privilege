@@ -1,16 +1,16 @@
 package Sub::Spec::Clause::drops_privilege;
 
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 sub update_schema {
-    my $schema = Sub::Spec::Schema::SCHEMA or return;
+    my $schema = $Sub::Spec::Schema::SCHEMA or return;
     $schema->[1]{keys}{drops_privilege} = 'bool*';
 }
 
 update_schema();
 
 1;
-# ABSTRACT: Add clause 'drops_privilege'
+# ABSTRACT: Add spec clause 'drops_privilege'
 
 
 __END__
@@ -18,11 +18,11 @@ __END__
 
 =head1 NAME
 
-Sub::Spec::Clause::drops_privilege - Add clause 'drops_privilege'
+Sub::Spec::Clause::drops_privilege - Add spec clause 'drops_privilege'
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

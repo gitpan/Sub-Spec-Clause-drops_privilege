@@ -1,7 +1,7 @@
 package Sub::Spec::Wrapper::Clause::drops_privilege;
 
 sub after_eval {
-    my ($wrapper) = @_;
+    my ($wrapper, $val) = @_;
     $wrapper->add_line('if ($< == 0 && $>) { $> = 0; $) = $( }');
 }
 
@@ -16,7 +16,7 @@ Sub::Spec::Wrapper::Clause::drops_privilege
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 AUTHOR
 

@@ -1,5 +1,5 @@
 ---
-abstract: "Add clause 'drops_privilege'"
+abstract: "Add spec clause 'drops_privilege'"
 author:
   - 'Steven Haryanto <stevenharyanto@gmail.com>'
 build_requires:
@@ -21,4 +21,4 @@ requires:
 resources:
   homepage: http://search.cpan.org/dist/Sub-Spec-Clause-drops_privilege/
   repository: http://github.com/sharyanto/perl-Sub-Spec-Clause-drops_privilege
-version: 0.01
+version: 0.02
