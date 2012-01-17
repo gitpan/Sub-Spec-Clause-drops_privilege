@@ -1,6 +1,6 @@
 package Sub::Spec::Clause::drops_privilege;
 
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 sub update_schema {
     my $schema = $Sub::Spec::Schema::SCHEMA or return;
@@ -22,7 +22,7 @@ Sub::Spec::Clause::drops_privilege - Add spec clause 'drops_privilege'
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -30,6 +30,14 @@ version 0.02
  drops_privilege => 1
 
 =head1 DESCRIPTION
+
+B<NOTICE>: The Sub::Spec specification is deprecated as of Jan 2012. L<Rinci> is
+the new specification to replace Sub::Spec, it is about 95% compatible with
+Sub::Spec, but corrects a few issues and is more generic. Perinci:: is the
+family of Perl modules that implement the Rinci specification. Many of its
+modules can handle existing Sub::Spec sub specs.
+L<Rinci::function::property::drops_privilege> is the replacement for
+this module.
 
 Argument: BOOL
 
@@ -52,7 +60,7 @@ Steven Haryanto <stevenharyanto@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Steven Haryanto.
+This software is copyright (c) 2012 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
